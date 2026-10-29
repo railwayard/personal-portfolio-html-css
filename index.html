@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My personal portfolio website showcasing my skills and projects.">
+  <title>My Portfolio | Web Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo">MyPortfolio.</a>
+      <button id="menu-toggle" aria-expanded="false"
+              aria-controls="nav-links" aria-label="Open navigation">
+        ☰
+      </button>
+      <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+      <h1>Hello, I'm <span>SANJANA MS</span></h1>
+      <h2>Aspiring Web Developer</h2>
+      <p class="hero-text">
+        I create clean, responsive, and user-friendly websites
+        using modern web technologies.
+      </p>
+      <a href="#projects" class="button">View My Work</a>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="avatar" role="img" aria-label="Decorative profile illustration">
+          👩‍💻
+        </div>
+        <div>
+          <h3>Who Am I?</h3>
+          <p>
+            I am an aspiring web developer passionate about technology,
+            creativity, and problem-solving. I am learning to build
+            attractive websites using HTML, CSS, and JavaScript.
+            My goal is to develop my skills and create useful digital
+            experiences for people.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <h2>My Projects</h2>
+      <p class="section-intro">Here are some of my projects.</p>
+
+      <label for="project-filter"></label>
+      <select id="project-filter">
+        <option value="all">All Projects</option>
+        <option value="html">HTML & CSS</option>
+        <option value="javascript">JavaScript</option>
+      </select>
+
+      <div class="project-grid">
+        <article class="project-card" data-category="html">
+          <div class="project-icon" aria-hidden="true">🌐</div>
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal website built with HTML and CSS.</p>
+          <span class="tag">HTML & CSS</span>
+        </article>
+
+        <article class="project-card" data-category="javascript">
+          <div class="project-icon" aria-hidden="true">✅</div>
+          <h3>Task Manager</h3>
+          <p>A simple application for organizing everyday tasks.</p>
+          <span class="tag">JavaScript</span>
+        </article>
+
+        <article class="project-card" data-category="html">
+          <div class="project-icon" aria-hidden="true">🎨</div>
+          <h3>Landing Page</h3>
+          <p>A modern landing page with a responsive layout.</p>
+          <span class="tag">HTML & CSS</span>
+        </article>
+      </div>
+      <p id="filter-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>My Skills</h2>
+      <p class="section-intro">Technologies I am learning and practicing.</p>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Responsive Design</li>
+        <li>Problem Solving</li>
+        <li>Git and GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <h2>Contact Me</h2>
+      <p class="section-intro">
+        Have a question or want to connect? Send me a message.
+      </p>
+
+      <form id="contact-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5"
+                  placeholder="Write your message" required></textarea>
+
+        <button type="submit" class="button">Submit Message</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Your Name | Personal Portfolio</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
